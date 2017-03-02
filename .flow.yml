@@ -3,7 +3,7 @@ flows:
     language: android
     version: jdk8
     env:
-      - FLOW_PROJECT_PATH=./MPAndroidChart
+      - MY_VERSION=111
 
     trigger:
       push:
