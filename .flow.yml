@@ -1,0 +1,33 @@
+flows:
+  - name: default
+    language: android
+    version: jdk8
+    env:
+      - FLOW_PROJECT_PATH=./MPAndroidChart
+
+    trigger:
+      push:
+        - develop
+        - master
+      pull_request: true
+
+    steps:
+      - name: Init
+        plugin:
+          name: android_init
+
+      - name: Git Clone
+        plugin:
+          name: git
+          
+      - name: Android Cache
+        plugin:
+          name: android_cache
+          inputs:
+           - FLOW_ENABLE_CACHE=TRUE
+          
+      - name: Build
+        plugin:
+          name: android_build
+          inputs:
+           - FLOW_ANDROID_GRADLE_TASK=build
