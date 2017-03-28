@@ -28,7 +28,7 @@ flows:
            
       - name: Memory
         scripts:
-          - org.gradle.jvmargs=-Xmx4096m -Xms4096m
+          - export GRADLE_OPTS=-Xmx4096m -Xms4096m
           
       - name: Build
         plugin:
