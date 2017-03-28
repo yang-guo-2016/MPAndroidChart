@@ -26,6 +26,10 @@ flows:
           inputs:
            - FLOW_ENABLE_CACHE=TRUE
            
+      - name: Memory
+        scripts:
+         - export ANDROID_OPTS='-Xms4g -Xmx4g'
+          
           
       - name: Build
         plugin:
