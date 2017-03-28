@@ -26,9 +26,6 @@ flows:
           inputs:
            - FLOW_ENABLE_CACHE=TRUE
            
-      - name: Memory
-        scripts:
-          - export GRADLE_OPTS=-Xmx4096m -Xms4096m
           
       - name: Build
         plugin:
