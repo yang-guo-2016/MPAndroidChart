@@ -25,6 +25,10 @@ flows:
           name: android_cache
           inputs:
            - FLOW_ENABLE_CACHE=TRUE
+           
+      - name: Memory
+        scripts:
+          - org.gradle.jvmargs=-Xmx4096m -Xms4096m
           
       - name: Build
         plugin:
