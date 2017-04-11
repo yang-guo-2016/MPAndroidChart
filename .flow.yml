@@ -29,7 +29,10 @@ flows:
       - name: Memory
         scripts:
          - export ANDROID_OPTS='-Xms4g -Xmx4g'
-          
+      
+      - name: Run Script
+        scripts:
+         - ./test.sh
           
       - name: Build
         plugin:
@@ -37,7 +40,7 @@ flows:
           inputs:
            - FLOW_ANDROID_GRADLE_TASK=build --stacktrace
       
-      - name: fir upload 0
+      - name: fir upload 111
         enable: true
         failure: false
         plugin:
