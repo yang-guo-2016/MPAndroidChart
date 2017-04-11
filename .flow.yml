@@ -37,11 +37,20 @@ flows:
           inputs:
            - FLOW_ANDROID_GRADLE_TASK=build --stacktrace
       
-      - name: fir upload
+      - name: fir upload 0
         enable: true
         failure: false
         plugin:
           name: fir_plugin
           inputs:
             - FIR_API_TOKEN=352c3d571fa37474841adaca000c60e3
+            - FIR_CHANGELOG='test change log $FLOW_EVENT_NUMBER'
+            
+      - name: fir upload 1
+        enable: true
+        failure: false
+        plugin:
+          name: fir_plugin
+          inputs:
+            - FIR_API_TOKEN=123123
             - FIR_CHANGELOG='test change log $FLOW_EVENT_NUMBER'
