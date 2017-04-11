@@ -35,7 +35,7 @@ flows:
         plugin:
           name: android_build
           inputs:
-           - FLOW_ANDROID_GRADLE_TASK=build
+           - FLOW_ANDROID_GRADLE_TASK=release
       
       - name: fir upload
         enable: true
