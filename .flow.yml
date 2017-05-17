@@ -55,5 +55,5 @@ flows:
         plugin:
           name: fir_plugin
           inputs:
-            - FIR_API_TOKEN=123123
-            - FIR_CHANGELOG='test change log $FLOW_EVENT_NUMBER'
+            - FLOW_FIR_API_TOKEN=123123
+            - FLOW_FIR_CHANGELOG='test change log $FLOW_EVENT_NUMBER'
