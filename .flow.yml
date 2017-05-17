@@ -46,8 +46,8 @@ flows:
         plugin:
           name: fir_plugin
           inputs:
-            - FIR_API_TOKEN=352c3d571fa37474841adaca000c60e3
-            - FIR_CHANGELOG='test change log $FLOW_EVENT_NUMBER'
+            - FLOW_FIR_API_TOKEN=352c3d571fa37474841adaca000c60e3
+            - FLOW_FIR_CHANGELOG='test change log $FLOW_EVENT_NUMBER'
             
       - name: fir upload 1
         enable: true
